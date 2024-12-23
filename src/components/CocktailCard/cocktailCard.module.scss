@@ -1,0 +1,15 @@
+@use '/src/styles/variables.scss';
+
+.card {
+  @media screen and (max-width: variables.$sm) {
+    flex-direction: column-reverse;
+  }
+}
+
+.image {
+  width: 50%;
+
+  @media screen and (max-width: variables.$sm) {
+    width: 100%;
+  }
+}

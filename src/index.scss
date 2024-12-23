@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-width: 360px;
+  max-width: 1024px;
+  min-height: 100dvh;
+  margin: 0 auto;
+}

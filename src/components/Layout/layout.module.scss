@@ -1,0 +1,42 @@
+@use '/src/styles/variables.scss';
+
+.layout {
+  background-color: white;
+  position: relative;
+}
+
+.sider {
+  position: sticky;
+  height: 100dvh;
+  top: 0;
+  overflow: auto;
+  background-color: white;
+
+  @media screen and (max-width: variables.$sm) {
+    overflow: unset;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  :global {
+    .ant-layout-sider-zero-width-trigger {
+      padding: 8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .ant-menu {
+      height: 100%;
+
+      @media screen and (max-width: variables.$sm) {
+        padding-top: 32px;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 24px;
+}
